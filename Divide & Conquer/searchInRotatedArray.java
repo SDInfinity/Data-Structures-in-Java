@@ -2,6 +2,11 @@
 public class searchInRotatedArray {
     public static int search(int a[], int low, int high, int target) { // returns the index of target
         int mid = low + (high - low) / 2;
+        //base case
+        if(low>high)
+        {
+            return -1;
+        }
         if (a[mid] == target) {
             return mid;
         }
